@@ -1,0 +1,45 @@
+-- Services
+local Players = game:GetService("Players")
+local Chat = game:GetService("Chat")
+
+-- LocalPlayer
+local LocalPlayer = Players.LocalPlayer
+local LocalCharacter = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local CharacterHead = LocalCharacter:WaitForChild("Head")
+
+-- Main
+Chat:Chat(CharacterHead, "This is my yapper alert - Brajens")
+
+-- Console Check
+print("Testing Console Respond")
+wait(3)
+
+-- Ignore the main 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
+
+-- Loaded Message
+print("Merged Script Credit - @viciousbeeplush - Main script composer - SkyHub")
+print("Script Loaded. - If it dosen't show up, it may be broken or didn't load successfully.")
+
+-- Message here
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "ViciBee Scripts";
+	Text = "Merged Script By @viciousbeeplush";
+	Icon = "rbxassetid://16571046253";
+})
+
+wait(2)
+
+-- Message here 2
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "ViciBee Notice";
+	Text = "Any loss of account or non-releated is not responsive to @viciousbeeplush.";
+	Icon = "rbxassetid://11745872910";
+})
+
+-- Game Check
+if game.PlaceId == 2788229376 then
+	print("ViciBee: Game ID is correct.")
+else
+	error('ViciBee: Incorrect Game ID, Join the following game!')
+end
